@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical"
+    tools:context="com.example.hp.deliveryproject.UserUpdateOrderDelivery">
+
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/ic_settings" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp">
+
+
+        <TextView
+            android:id="@+id/updateorderdelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:text="Update Order Delivery"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/reveivername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/updateorderdelivery"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Receiver Name"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/receivernameinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/updateorderdelivery"
+            android:layout_alignLeft="@+id/reveivername"
+
+            android:layout_alignRight="@+id/updateorderdelivery"
+            android:layout_alignStart="@+id/reveivername"
+            android:layout_below="@+id/reveivername"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/editText12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/reveivername"
+            android:layout_alignStart="@+id/reveivername"
+            android:layout_below="@+id/receivernameinput"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Receiver NIC/ID"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/nic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/receivernameinput"
+            android:layout_alignLeft="@+id/receivernameinput"
+            android:layout_alignRight="@+id/receivernameinput"
+            android:layout_alignStart="@+id/receivernameinput"
+            android:layout_below="@+id/editText12"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/editText15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText12"
+            android:layout_alignStart="@+id/editText12"
+            android:layout_below="@+id/nic"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Deliverd?"
+            android:textSize="18sp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nic"
+            android:layout_alignStart="@+id/nic"
+            android:layout_below="@+id/editText15"
+            android:layout_gravity="left"
+            android:text=""
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/editText16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText15"
+            android:layout_alignStart="@+id/editText15"
+            android:layout_below="@+id/checkBox"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Comment"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/nic"
+            android:layout_alignLeft="@+id/editText16"
+            android:layout_alignRight="@+id/nic"
+            android:layout_alignStart="@+id/editText16"
+            android:layout_below="@+id/editText16"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/Done"
+            style="@style/button_style"
+            android:layout_width="120dp"
+            android:layout_below="@+id/editText17"
+            android:layout_centerHorizontal="true"
+            android:text="Done"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

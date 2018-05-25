@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical"
+    tools:context="com.example.hp.deliveryproject.ManagerDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:text="Welcome Manager"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:padding="20dp"/>
+
+        <ImageButton
+            android:id="@+id/btnViewOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_orders"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/editText26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:text="Manger Orders"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:padding="20dp"/>
+
+        <ImageButton
+            android:id="@+id/btnManageDelAgent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_manageaccount"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/editText28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:text="Manage Delivery Agent"
+            android:textStyle="bold"
+            android:padding="20dp"/>
+
+
+        <ImageButton
+            android:id="@+id/btnChangePw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_changepassword"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/editText27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:text="Change Password"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:padding="20dp"/>
+
+
+        <Button
+
+            android:id="@+id/buttonlogout"
+            style="@style/button_style"
+            android:layout_width="150dp"
+            android:layout_toEndOf="@+id/btnManageDelAgent"
+            android:layout_toRightOf="@+id/btnManageDelAgent"
+            android:text="Logout"
+            android:textAllCaps="false"/>
+        
+    </LinearLayout>
+</RelativeLayout>

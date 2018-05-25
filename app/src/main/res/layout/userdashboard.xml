@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:gravity="top|center"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/editText21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:text="Welcome"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="" />
+
+        <ImageButton
+            android:id="@+id/userdashboardimgview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText21"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_view"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText3"
+            android:layout_alignRight="@+id/editText3"
+            android:layout_below="@+id/imageButton"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:selectAllOnFocus="false"
+            android:text="View Pickup Requests"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/userdashboardimgaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton3"
+            android:layout_alignStart="@+id/imageButton3"
+            android:layout_below="@+id/editText3"
+            android:background="@mipmap/ic_account"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageButton2"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:text="Manage Account"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/btnChangeUserPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton"
+            android:layout_alignStart="@+id/imageButton"
+            android:layout_below="@+id/etName"
+            android:background="@mipmap/ic_changepassword"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_below="@+id/imageButton3"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:text="Change Pasword"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/button_style"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Logout"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/userdashboardimgaddpickuprequests"
+        android:background="@mipmap/ic_add" />
+
+</RelativeLayout><!-- As you can see I've added a realtive layout and given it a gravity:center proeprty give all its sub elements an
+appropriate padding. Remove all margins so to make it resposive on any device however don't remove the layout_toendof etc
+unless you have to.-->

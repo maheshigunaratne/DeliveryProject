@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.deliveryproject">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DeliverIt"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".UserDashboard"></activity>
+        <activity android:name=".UserAddPickupRequest"></activity>
+        <activity android:name=".UserUpdateOrderDelivery"></activity>
+        <activity android:name=".ManagerViewPickup"></activity>
+        <activity android:name=".ManagerAssignDeliveryAgent"></activity>
+        <activity android:name=".ManagerDashboard"></activity>
+        <activity android:name=".DeliveryAgentDashboard"></activity>
+        <activity android:name=".ChangePassword"></activity>
+        <activity android:name=".AddDeliveryPerson"></activity>
+        <activity android:name=".ManagerManagedDeliveryAgentActivity"></activity>
+        <activity android:name=".ManagerViewDeliveryAgent"></activity>
+        <activity android:name=".UserViewPickup"></activity>
+        <activity android:name=".DeliveryAgentViewPickup"></activity>
+        <activity android:name=".UpdateUserAcoountActivity"></activity>
+        <activity android:name=".ResetPassword"></activity>
+        <activity android:name=".ManagerAddDeliveryPerson"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:text="Welcome Delivery Agent"
+            android:textSize="24sp"
+            android:padding="20dp"/>
+
+
+        <ImageButton
+            android:id="@+id/imageButtonDeliveryAgentDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_view"
+            android:padding="20dp"/>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Pickup Request"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:padding="20dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonlogout"
+            android:background="@mipmap/ic_changepassword"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:padding="20dp"/>
+
+
+        <Button
+            android:padding="20dp"
+            android:id="@+id/buttonlogout"
+            style="@style/button_style"
+            android:layout_width="150dp"
+            android:text="Logout"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

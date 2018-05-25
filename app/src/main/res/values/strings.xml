@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DeliveryProject</string>
+    <string name="register">Register</string>
+    <string name="lostpassword">Forgot Your Password<a href="recoverpassword.xml" target="_top"></a></string>
+
+</resources>

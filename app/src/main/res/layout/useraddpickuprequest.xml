@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical"
+    tools:context="com.example.hp.deliveryproject.UserAddPickupRequest">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp">
+
+        <TextView
+            android:id="@+id/editText24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Add Request Pickup"
+            android:textSize="24sp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText24"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Recipient Name" />
+
+        <EditText
+            android:id="@+id/userAddPickupRequestRecipientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText24"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignRight="@+id/editText24"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/editText20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/recipientname"
+            android:layout_alignStart="@+id/recipientname"
+            android:layout_below="@+id/recipientname"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Delivery Date" />
+
+        <EditText
+            android:id="@+id/userAddPickupRequestDeliveryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/recipientname"
+            android:layout_alignLeft="@+id/editText20"
+            android:layout_alignRight="@+id/recipientname"
+            android:layout_alignStart="@+id/editText20"
+            android:layout_below="@+id/editText20"
+            android:hint="MM/DD/YYYY"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/editText30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText20"
+            android:layout_alignRight="@+id/editText20"
+            android:layout_below="@+id/date"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="From Location" />
+
+        <EditText
+            android:id="@+id/userAddPickupRequestFromLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/date"
+            android:layout_alignLeft="@+id/editText30"
+            android:layout_alignRight="@+id/date"
+            android:layout_alignStart="@+id/editText30"
+            android:layout_below="@+id/editText30"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/editText32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/from"
+            android:layout_alignStart="@+id/from"
+            android:layout_below="@+id/from"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="To Location" />
+
+        <EditText
+            android:id="@+id/userAddPickupRequestToLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/from"
+            android:layout_alignLeft="@+id/editText32"
+            android:layout_alignRight="@+id/from"
+            android:layout_alignStart="@+id/editText32"
+            android:layout_below="@+id/editText32"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+
+                android:text="Length(cm)" />
+
+            <TextView
+                android:id="@+id/editText34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+
+                android:text="Width(cm)" />
+
+            <TextView
+                android:id="@+id/editText35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+
+                android:text="Height(cm)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/userAddPickupRequestLength"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText33"
+                android:layout_alignStart="@+id/editText33"
+                android:layout_below="@+id/editText33"
+                android:inputType="numberDecimal"
+                android:text="1"/>
+
+            <EditText
+                android:id="@+id/userAddPickupRequestWidth"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText33"
+                android:layout_centerHorizontal="true"
+                android:inputType="numberDecimal"
+                android:text="1"/>
+
+            <EditText
+                android:id="@+id/userAddPickupRequestHeight"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/to"
+                android:layout_alignRight="@+id/to"
+                android:layout_below="@+id/editText34"
+                android:inputType="numberDecimal"
+                android:text="1"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/editText41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/length"
+            android:layout_toLeftOf="@+id/height"
+            android:layout_toStartOf="@+id/height"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:text="Phone" />
+
+        <EditText
+            android:id="@+id/userAddPickupRequestPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/height"
+            android:layout_alignLeft="@+id/editText41"
+            android:layout_alignRight="@+id/height"
+            android:layout_alignStart="@+id/editText41"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="24dp"
+                android:textColor="@color/colorAccent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="180.00"
+                android:id="@+id/userAddPickupRequestPrice"
+                android:textSize="24dp"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/userAddPickupRequestSubmit"
+            style="@style/button_style"
+            android:layout_width="150dp"
+            android:layout_below="@+id/phone"
+            android:layout_centerHorizontal="true"
+            android:text="Done"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
